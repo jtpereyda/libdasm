@@ -1462,7 +1462,7 @@ INST inst_table_ext2_6[8] = {
 
 INST inst_table_ext3_1[8] = {
 	{ INSTRUCTION_TYPE_TEST,   "test",      AM_E|OT_b|P_r,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_OF|EFL_CF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
-	{ INSTRUCTION_TYPE_OTHER,  NULL,        FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_TEST,   "test",      AM_E|OT_b|P_r,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_OF|EFL_CF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_NOT,    "not",       AM_E|OT_b|P_w,               FLAGS_NONE,                FLAGS_NONE,   1, 0, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_NEG,    "neg",       AM_E|OT_b|P_w,               FLAGS_NONE,                FLAGS_NONE,   1, EFL_CF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_MUL,    "mul",       AM_E|OT_b|P_w,               FLAGS_NONE|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF, 0, IOP_EAX, IOP_EAX },
@@ -1472,7 +1472,7 @@ INST inst_table_ext3_1[8] = {
 };
 INST inst_table_ext3_2[8] = {
 	{ INSTRUCTION_TYPE_TEST,   "test",      AM_E|OT_v|P_r,               AM_I|OT_v|P_r,             FLAGS_NONE,   1, EFL_OF|EFL_CF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
-	{ INSTRUCTION_TYPE_OTHER,  NULL,        FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_TEST,   "test",      AM_E|OT_v|P_r,               AM_I|OT_v|P_r,             FLAGS_NONE,   1, EFL_OF|EFL_CF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_NOT,    "not",       AM_E|OT_v|P_w,               FLAGS_NONE,                FLAGS_NONE,   1, 0, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_NEG,    "neg",       AM_E|OT_v|P_w,               FLAGS_NONE,                FLAGS_NONE,   1, EFL_CF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_MUL,    "mul",       AM_E|OT_v|P_w,               FLAGS_NONE|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF, 0, IOP_EAX|IOP_EDX, IOP_EAX },
