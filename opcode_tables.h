@@ -1406,7 +1406,7 @@ INST inst_table_ext2_1[8] = {
 	{ INSTRUCTION_TYPE_ROX,   "rcr",        AM_E|OT_b|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shl",        AM_E|OT_b|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shr",        AM_E|OT_b|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
-	{ INSTRUCTION_TYPE_OTHER, NULL,         FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_SHX,   "sal",        AM_E|OT_b|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "sar",        AM_E|OT_b|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 };
 INST inst_table_ext2_2[8] = {
@@ -1416,7 +1416,7 @@ INST inst_table_ext2_2[8] = {
 	{ INSTRUCTION_TYPE_ROX,   "rcr",        AM_E|OT_v|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shl",        AM_E|OT_v|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shr",        AM_E|OT_v|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
-	{ INSTRUCTION_TYPE_OTHER, NULL,         FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_SHX,   "sal",        AM_E|OT_v|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "sar",        AM_E|OT_v|P_w,               AM_I|OT_b|P_r,             FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 };
 INST inst_table_ext2_3[8] = {
@@ -1426,7 +1426,7 @@ INST inst_table_ext2_3[8] = {
 	{ INSTRUCTION_TYPE_ROX,   "rcr",        AM_E|OT_b|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shl",        AM_E|OT_b|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shr",        AM_E|OT_b|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
-	{ INSTRUCTION_TYPE_OTHER, NULL,         FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_SHX,   "sal",        AM_E|OT_b|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "sar",        AM_E|OT_b|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 };
 INST inst_table_ext2_4[8] = {
@@ -1436,7 +1436,7 @@ INST inst_table_ext2_4[8] = {
 	{ INSTRUCTION_TYPE_ROX,   "rcr",        AM_E|OT_v|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shl",        AM_E|OT_v|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shr",        AM_E|OT_v|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
-	{ INSTRUCTION_TYPE_OTHER, NULL,         FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_SHX,   "sal",        AM_E|OT_v|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "sar",        AM_E|OT_v|P_w,               AM_I1|OT_b|P_r,            FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 };
 INST inst_table_ext2_5[8] = {
@@ -1446,7 +1446,7 @@ INST inst_table_ext2_5[8] = {
 	{ INSTRUCTION_TYPE_ROX,   "rcr",        AM_E|OT_b|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shl",        AM_E|OT_b|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shr",        AM_E|OT_b|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
-	{ INSTRUCTION_TYPE_OTHER, NULL,         FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_SHX,   "sal",        AM_E|OT_b|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "sar",        AM_E|OT_b|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 };
 INST inst_table_ext2_6[8] = {
@@ -1456,7 +1456,7 @@ INST inst_table_ext2_6[8] = {
 	{ INSTRUCTION_TYPE_ROX,   "rcr",        AM_E|OT_v|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shl",        AM_E|OT_v|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "shr",        AM_E|OT_v|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
-	{ INSTRUCTION_TYPE_OTHER, NULL,         FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_SHX,   "sal",        AM_E|OT_v|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_SHX,   "sar",        AM_E|OT_v|P_w,               AM_REG|REG_CL|OT_b|P_r,    FLAGS_NONE,   1, EFL_CF|EFL_OF|EFL_SF|EFL_ZF|EFL_PF, 0, 0, 0 },
 };
 
