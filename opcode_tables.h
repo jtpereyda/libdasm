@@ -1821,6 +1821,7 @@ INST inst_table_fpu_d9[72] = {
 	{ INSTRUCTION_TYPE_FPU,    NULL,        FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
 	{ INSTRUCTION_TYPE_FPU,    NULL,        FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
 	{ INSTRUCTION_TYPE_FPU,    NULL,        FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
+	{ INSTRUCTION_TYPE_FPU,    NULL,        FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
 	{ INSTRUCTION_TYPE_FPU,    "fchs",      FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_FPU,    "fabs",      FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 },
 	{ INSTRUCTION_TYPE_FPU,    NULL,        FLAGS_NONE,                  FLAGS_NONE,                FLAGS_NONE,   0, 0, 0, 0, 0 }, 
