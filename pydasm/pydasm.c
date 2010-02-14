@@ -393,6 +393,8 @@ PyObject *create_instruction_object(INSTRUCTION *insn)
     assign_attribute(pInstruction, "op3", create_operand_object(&insn->op3));
     assign_attribute(pInstruction, "ptr", create_inst_object(insn->ptr));
     assign_attribute(pInstruction, "flags", PyLong_FromLong(insn->flags));
+    assign_attribute(pInstruction, "eflags_affected", PyLong_FromLong(insn->eflags_affected));
+    assign_attribute(pInstruction, "eflags_used", PyLong_FromLong(insn->eflags_used));
         
     return pInstruction;
 }
