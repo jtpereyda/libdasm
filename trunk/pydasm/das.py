@@ -19,7 +19,7 @@ def main():
                (os.sys.argv[0])
         os.sys.exit(1)
         
-    fd = file(os.sys.argv[1])
+    fd = file(os.sys.argv[1], 'rb')
     data = fd.read()
     fd.close()
     

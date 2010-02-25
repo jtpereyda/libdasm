@@ -1,7 +1,15 @@
 
 HISTORY.txt -- libdasm release history
 (c) 2004 - 2007 jt / nologin.org
+    2009 - 2010 Ange Albertini
 ======================================
+
+1.6 r14
++ eflags are now accessible from python [nnp]
++ added group 2 (c0-c1) SAL (xx110xxx) [Silvio Cesare]
++ added 0xf6-0xf7 (group 3) test xx001xxx
++ added 0d9 d0-ff fpu [Georg 'oxff' Wicherski]
+* fixed operand types for mov segment register (8c) and movzx (0fb6 and 0fb7) [Silvio Cesare]
 
 1.5 12/27/2006
 
