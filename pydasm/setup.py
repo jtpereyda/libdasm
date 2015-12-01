@@ -1,6 +1,6 @@
 
 import os
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 from distutils.sysconfig import get_python_inc
 
 incdir = os.path.join(get_python_inc(plat_specific=1))
