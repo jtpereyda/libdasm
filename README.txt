@@ -1,15 +1,21 @@
 
 libdasm -- simple x86 disassembly library
 =========================================
-(c) 2004 - 2006  jt / nologin.org 
+Copyright (c) 2004-2007  Jarkko Turkulainen <jt / nologin.org> <turkja / github.com>)
+Copyright (c) 2005       Ero Carrera Ventura <ero / dkbza.org> (Python binding)
+Copyright (c) 2006       Matt Miller skape <mmiller / hick.org> (Ruby binding)
+Copyright (c) 2009-2010  Ange Albertini <angea / github.com>
+Copyright (c) 2015-2018  Joshua Pereyda <jtpereyda / github.com>
 
 
-1. Acknowledgements
+1. Acknowledgments
 ===================
 
-Thanks to skape, thief, spoonm and fine folks @nologin for bug
-reports, ideas and support. Special thanks to ero for creating
-and contributing pydasm and to skape for rbdasm.
+Thanks to skape, thief, spoonm, Silvio Cesare, Georg oxff Wicherski, BeatriX
+and fine folks @nologin for bug reports, ideas and support.
+Special thanks to ero for creating and contributing pydasm
+and to skape for rbdasm.
+
 
 
 2. What is libdasm?
@@ -66,7 +72,7 @@ int get_instruction(
       enum Mode mode          // mode: MODE_32 or MODE_16
 );
 
-First argument is a refence to INSTRUCTION structure. There is no
+First argument is a reference to INSTRUCTION structure. There is no
 need to initialize the structure prior to function call, get_instruction
 will take care of filling it.
 
@@ -86,7 +92,7 @@ is zero, it indicates illegal instruction.
 When get_instruction returns, you can print the instruction with
 get_instruction_string or do analysis of the instruction members. When
 ready, increment data buffer pointer to next instruction and call
-get_instruction again. Here is pseudocode presenting this procedure:
+get_instruction again. Here is pseudo-code presenting this procedure:
 
 	INSTRUCTION inst;
 	int len, buflen, c = 0;
@@ -318,7 +324,7 @@ too complex..).
 
 5.2. Segment prefix formatting
 
-Libdasm is modelled after the assumption that there is only one memory
+Libdasm is modeled after the assumption that there is only one memory
 operand at maximum in the instruction. If there is segment register override,
 the segment register is placed in front of the memory operand, like this:
 
@@ -338,7 +344,7 @@ is equivalent to:
 
   cmpsd fs:[esi], es:[edi]
 
-And btw, if you are wondering what are those weird "(bt)" and "(bnt)"
+And BTW, if you are wondering what are those weird "(bt)" and "(bnt)"
 prefixes in front of conditional jumps, they are branch hint prefixes 
 ("branch taken" and "branch not taken").
 
@@ -357,7 +363,7 @@ Libdasm will not check for read buffer boundaries. It means that if the
 opcode requires additional data to be read and that data cannot be accessed,
 libdasm might access violate, depending on the implementation. There is no
 platform-independent way of checking this condition, so you better make
-sure of it by youself. If the data is real machine code, there is no
+sure of it by yourself. If the data is real machine code, there is no
 problem (unless of course there is a bug in libdasm) because libdasm needs
 to read exactly what the instruction requires and of course the full
 instruction is in buffer, right? But in some rare cases when disassembling
@@ -365,7 +371,7 @@ random data this could cause some troubles.
 
 5.5. Endianness
 
-Endianess might not be identified correctly on all platforms
+Endianness might not be identified correctly on all platforms
 (see libdasm.h for definition of __LITTLE_ENDIAN__). If you encounter
 endianness related problems, please report the system and possible workaround
 for the problem.
@@ -374,7 +380,7 @@ for the problem.
 5.6. Inline functions
 
 Some functions are defined as inline, this might not work for all compilers.
-Only gcc and msvc are tested by the author.
+Only gcc and MSVC are tested by the author.
 
 
 5.7. Other issues
@@ -386,19 +392,17 @@ Some known issues are listed in file TODO.txt.
 6. Licensing
 ============
 
-libdasm is public domain software. You can do whatever you like with it.
+libdasm was originally released as public domain software. You can do whatever you like with it.
+Due to some legal uncertainty of "public domain" in some countries it was re-licensed to
+2-clause BSD type license to allow both commercial and non-commercial use.
 
 
 7. How to contact the author
 ============================
 
 If you have bug report or some improvement ideas or want to harass the author
-for some other reason, you can try to send email to
-
-  jt[at]klake.org
-
-If you have questions about pydasm and rbdasm, check out directories
-"pydasm" and "rbdasm" for contact information.
+for some other reason, please raise the issue on GitHub:
+https://github.com/jtpereyda/libdasm/issues
 
 
 
