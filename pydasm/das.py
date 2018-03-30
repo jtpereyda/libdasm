@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 #
 # das.py -- simple 32-bit example disassembler program
 # Copyright (c) 2005       Ero Carrera Ventura <ero / dkbza.org> (Python adaptation)
