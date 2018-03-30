@@ -38,7 +38,7 @@
 extern "C" {
 #endif
 
-#define __LIBDASM_VERSION__     0x01050000
+#define __LIBDASM_VERSION__     0x01060000
 
 #define GET_VERSION_MAJOR  \
 	(__LIBDASM_VERSION__ & 0xff000000) >> 24
