@@ -156,7 +156,7 @@ unsigned char * read_file(int *len, char *name) {
         int             c;
         struct stat     sstat;
 
-        if ((fp = fopen(name, "r+b")) == NULL) {
+        if ((fp = fopen(name, "rb")) == NULL) {
                 fprintf(stderr,"Error: unable to open file \"%s\"\n", name);
                 exit(0);
         }
